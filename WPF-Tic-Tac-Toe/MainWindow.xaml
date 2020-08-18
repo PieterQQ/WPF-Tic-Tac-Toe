@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Tic_Tac_Toe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="600" Width="600">
     <Grid>
-
-    </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Background="AliceBlue"/>
+        <Button Grid.Row="1" Grid.Column="0" Background="AliceBlue"/>
+        <Button Grid.Row="2" Grid.Column="0" Background="AliceBlue"/>
+        <Button Grid.Row="0" Grid.Column="1" Background="AliceBlue"/>
+        <Button Grid.Row="1" Grid.Column="1" Background="AliceBlue"/>
+        <Button Grid.Row="2" Grid.Column="1" Background="AliceBlue"/>
+        <Button Grid.Row="0" Grid.Column="2" Background="AliceBlue"/>
+        <Button Grid.Row="1" Grid.Column="2" Background="AliceBlue"/>
+        <Button Grid.Row="2" Grid.Column="2" Background="AliceBlue"/>
+    </Grid>         
 </Window>
